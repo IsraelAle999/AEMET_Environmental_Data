@@ -1,5 +1,19 @@
-# AEMET Environmental Data
-Download environmental temperature and humidity data from the State Meteorological Agency (AEMET).
+# AEMET Meteorological Data Extraction and Analysis
+
+This repository provides Python utilities to fetch historical climatological data from the AEMET OpenData API, process it with pandas, and visualize it using matplotlib.
+
+---
+
+## Contents
+
+- **api_keys**: Configuration of the AEMET API access token.
+- **split_date_range**: Function to split a date range into up to 6‑month subranges to comply with API limitations.
+- **get_aemet_dataframe**: Fetches daily climatological values and returns them as a pandas DataFrame.
+- **plot_aemet_data**: Generates a 2×2 plot for temperature, precipitation, pressure, and wind.
+- **monthly_analysis**: Performs monthly analyses (means, totals, and day counts) and visualizes them.
+- **main**: Example script demonstrating parameter usage for date range and station ID.
+
+---
 
 ## Instructions for use
 
@@ -7,7 +21,7 @@ Download environmental temperature and humidity data from the State Meteorologic
 2. Generate de api key. Example:
 
 ```
-eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc3JhZWxhMDQyQGdtYWlsLmNvbSIsImp0aSI6ImNkZTE1ZTc0LTBjOTEtNDEyNC04MGZiLTEyM2FmNDRhYWUwMyIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNzA3MzAzMDQ1LCJ1c2VySWQiOiJjZGUxNWU3NC0wYzkxLTQxMjQtODBmYi0xMjNhZjQ0YWFlMDMiLCJyb2xlIjoiIn0.b0SHmauJbxv7-fdgsPDxNupf1DVnCsN4Wrzz2Bxi5x0
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc3JhZWxhMDQyQGdtYWlsLmNvbSIsImp0aSI6ImNkZTE1ZTc0LTBjOTEtNDEyNC04MGZiLTEyM2FmNDRhYWUwMyIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNzA3MzAzMDQ1LCJ1c2VySWQiOiJjZGUxNWU3NC0wYzkxLTQxMjQtODBmYi0xMjNhZjQ0YWFlMDMiLCJyb2xlIjoiIn0
 ```
 3. Search for the station ID on the web:  [Station_ID](https://opendata.aemet.es/centrodedescargas/productosAEMET?).
 4. Define the Start and Final date in ```main.py``` file.
