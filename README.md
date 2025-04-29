@@ -7,10 +7,10 @@ This repository provides Python utilities to fetch historical climatological dat
 ## Contents
 
 - **api_keys**: Configuration of the AEMET API access token.
-- **split_date_range**: Function to split a date range into up to 6‑month subranges to comply with API limitations.
-- **get_aemet_dataframe**: Fetches daily climatological values and returns them as a pandas DataFrame.
-- **plot_aemet_data**: Generates a 2×2 plot for temperature, precipitation, pressure, and wind.
-- **monthly_analysis**: Performs monthly analyses (means, totals, and day counts) and visualizes them.
+- [split_date_range.py](src/split_date_range.py): Function to split a date range into up to 6‑month subranges to comply with API limitations.
+- [get_aemet_dataframe.py](src/get_aemet_dataframe.py): Fetches daily climatological values and returns them as a pandas DataFrame.
+- [plot_aemet_data.py](src/plot_aemet_data.py): Generates a 2×2 plot for temperature, precipitation, pressure, and wind.
+- [monthly_analysis.py](src/monthly_analysis.py): Performs monthly analyses (means, totals, and day counts) and visualizes them.
 - **main**: Example script demonstrating parameter usage for date range and station ID.
 
 ---
