@@ -60,7 +60,7 @@ pip install -r requirements.txt
 1. **Edit `main.py`**:
    ```python
    from aemet import Aemet
-   from api_keys import API_KEY
+
    from src.get_aemet_dataframe import get_aemet_dataframe
    from src.plot_aemet_data import plot_aemet_data
    from src.monthly_analysis import monthly_analysis
