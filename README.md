@@ -109,9 +109,19 @@ print(rainiest_days[['fecha', 'prec', 'tmed']])
 
 ---
 
-## 🤝 Contributing
+## 📤 Example output
 
-Contributions, issues, and feature requests are welcome! Please fork the repo and open a pull request.
+### Daily 
+
+<p align="center">
+  <img src="./images/daily_output.png" alt="plot" width="100%">
+</p>
+
+### Monthly
+
+<p align="center">
+  <img src="./images/monthly_ouput.png" alt="plot" width="100%">
+</p>
 
 ---
 
