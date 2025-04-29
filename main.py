@@ -13,7 +13,7 @@ from src.plot_aemet_data import plot_aemet_data
 
 #########################################################################################
 # Create API keys with this link: https://opendata.aemet.es/centrodedescargas/obtencionAPIKey
-API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpc3JhZWxhMDQyQGdtYWlsLmNvbSIsImp0aSI6IjVkNGJiOTA0LTYwMTQtNGI4Yi1hOGExLTE1OGEyNDliNmQzMyIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNzQ1OTMyOTY1LCJ1c2VySWQiOiI1ZDRiYjkwNC02MDE0LTRiOGItYThhMS0xNThhMjQ5YjZkMzMiLCJyb2xlIjoiIn0.ejgsIgDmj8iDmKUNAwVx23GIoNy6pAOBPNtyqaWsShM"
+API_KEY = ""
 aemet_client = Aemet(api_key=API_KEY)
 #########################################################################################
 
